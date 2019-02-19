@@ -1,0 +1,26 @@
+body{
+    font-family: 'Playfair Display', 'Arial', serif;
+    color: #626262;
+    font-size: 14px;
+    line-height: 24px;
+}
+.menu li{
+    list-style: none;
+}
+
+.menu a{
+text-transform: uppercase;
+text-decoration: none;
+}
+
+.ubuntu{
+    color:#b4ad9e;
+    font-family: 'Ubuntu', sans-serif;
+    line-height: 17px;
+    text-transform: uppercase;
+}
+.headline{
+    font-size: 30px;
+    line-height: 36px;
+    font-family: 'Playfair Display', serif;
+}
