@@ -10,6 +10,8 @@ body{
     width: 480px;
     margin:auto;
     list-style: none;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 .menu-item{
     display: inline-block;
@@ -37,11 +39,25 @@ text-align: center;
     line-height: 36px;
     font-family: 'Playfair Display', serif;
 }
-.article {
+section{
+    margin-left: 130px;
+    margin-top: 30px;
+    
+}
+article {
     display: block;
-    margin: 50px;
-    text-align: center;
-    width: 49%;
-
-
+    width: 50%;
+    float: left;
+}
+img{
+    width: 420px;
+    height: 280px;
+}
+p{
+    width: 420px;
+}
+button{
+    text-transform: uppercase;
+    margin-left: 40%;
+    margin-top: 30px;
 }
