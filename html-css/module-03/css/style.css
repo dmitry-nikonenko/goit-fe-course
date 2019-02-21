@@ -40,19 +40,18 @@ text-align: center;
     font-family: 'Playfair Display', serif;
 }
 section{
-    margin-left: 130px;
-    margin-top: 30px;
-    
+    box-sizing: border-box;
 }
 article {
-    display: block;
+    box-sizing: border-box;
     width: 50%;
+    min-height: 400px;
+    display: block;
     float: left;
+    padding-left: 50px;
+
 }
-img{
-    width: 420px;
-    height: 280px;
-}
+
 p{
     width: 420px;
 }
