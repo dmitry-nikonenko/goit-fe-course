@@ -1,59 +1,93 @@
+
 body{
-    font-family: 'Playfair Display', 'Arial', serif;
-    color: #626262;
-    font-size: 14px;
-    line-height: 24px;
+    margin: 0;
+    font-size: 0;  
+}
+
+.wrapper{
+  width: 900px;
+  margin: 0 auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.main-header{
+    margin-bottom: 40px;
 }
 .menu {  
-    width: 480px;
-    margin:auto;
-    list-style: none;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    text-align: center;
 }
 .menu-item{
     display: inline-block;
-    margin-right: 10px;
+    line-height: 40px;
+    font-size: 14px; 
 }
+    
 .menu a:hover{
-    color:#0bbeef;
+    color:  #03f9f3;
 }
-.menu a {
-text-transform: uppercase;
-text-decoration: none;
-display: block;
-width: 100px;
-text-align: center;
+.menu a { 
+    text-decoration: none;
+    color: #626262;;
+    text-transform: uppercase;
+    display: block;
+    padding: 0 30px;   
 }
+
+section{
+   
+    margin: 0;
+    font-size: 0;
+    width: auto;
+  font-size: 14px;
+  margin-bottom: 135px;
+  font-family: "Playfair Display", serif;
+}
+img{
+    display: block;
+   max-width: 100%;
+   height: auto;
+   margin-bottom: 30px;
+}
+
+article:nth-child(even){
+    margin-left: 50px;
+  }
 
 .ubuntu{
-    color:#b4ad9e;
-    font-family: 'Ubuntu', sans-serif;
-    line-height: 17px;
-    text-transform: uppercase;
+    font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-bottom: 30px;
 }
 .headline{
-    font-size: 30px;
-    line-height: 36px;
-    font-family: 'Playfair Display', serif;
+    margin-bottom: 30px;
+  font-size: 26px;}
+.text{
+    margin-bottom: more;
+  font-size: 14px;
+  line-height: 2em;
 }
-section{
+article{
     display: inline-block;
-    width: auto;
-    margin-left: 200px;
-    
-}
-article {
-    display: inline-block;
-    width: 49%;
-    margin: auto;
-}
-
-p{
+    margin: 0;
     width: 420px;
 }
+
 button{
-    text-transform: uppercase;
-    margin-left: 40%;
-    margin-top: 30px;
+width: 164px;
+height: 60px;
+background-color: #ddddd7;
+border: 1px solid #626262;
+margin: 0 auto;
+padding: auto;
+margin-top: 40px;
+display: block;
+
+}
+.button{
+ font-size: 20px;
+line-height: 24px;
+color: #626262;
+font-family: "Playfair Display";
 }
