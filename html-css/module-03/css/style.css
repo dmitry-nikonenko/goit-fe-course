@@ -64,7 +64,6 @@ article:nth-child(even){
     margin-bottom: 30px;
   font-size: 26px;}
 .text{
-    margin-bottom: more;
   font-size: 14px;
   line-height: 2em;
 }
@@ -80,7 +79,6 @@ height: 60px;
 background-color: #ddddd7;
 border: 1px solid #626262;
 margin: 0 auto;
-padding: auto;
 margin-top: 40px;
 display: block;
 
