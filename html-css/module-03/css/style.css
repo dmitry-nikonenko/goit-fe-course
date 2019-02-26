@@ -48,9 +48,11 @@ img{
    height: auto;
    margin-bottom: 30px;
 }
-
+.article{
+    margin-right: 60px;
+}
 .article:nth-child(even){
-    margin-left: 50px;
+    margin-right: 0;
   }
 
 .ubuntu{
