@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="/module-04/css/normalize.css">
-    <link rel="stylesheet" href="/module-04/css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
     <title>Module-4</title>
 </head>
 
@@ -15,9 +17,9 @@
     <div class="wrapper">
         <!--Navigation-->
         <header class="page_header">
-            <nav class="menu_nav">
+            <nav class="menu_nav clearfix">
                 <a class="logo" href="#">MART</a>
-                <ul class="menu">
+                <ul class="menu clearfix">
                     <li><a href="#">home</a></li>
                     <li><a href="#">about us</a></li>
                     <li><a href="#">page</a></li>
@@ -30,22 +32,22 @@
         <!--MAIN-->
         <main>
             <!--belongings-->
-            <section class="section_1">
-                <h2 class="headline_1">FEATURED PRODUCTS</h2>
-                <ul>
+            <section class="product">
+                <h2>FEATURED PRODUCTS</h2>
+                <ul class="product_list ">
                     <li>
-                        <a href="#">
-                            <img class="clothes" src="img/li-1-1.jpg" alt="blue shoe" width="255" height="322">
-                            <div>
-                                <p class="name">Blue Tshirt</p>
-                                <p class="price">26</p>
+                        <a  href="#">
+                            <img class="clothes " src="img/li-1-1.jpg" alt="blue shoe" width="255" height="322">
+                            <div class="clearfix">
+                                <p class="name ">Blue Tshirt</p>
+                                <p class="price ">26</p>
                             </div>
                         </a>
                     </li>
                     <li>
                         <a href="#">
                             <img class="clothes" src="img/li-1-2.jpg" alt="gold belt" width="255" height="322">
-                            <div>
+                            <div >
                                 <p class="name">WOMAN shirt</p>
                                 <p class="price">31</p>
                             </div>
@@ -71,7 +73,7 @@
                     </li>
                     <li>
                         <a href="#">
-                            <img class="clothes" src="img/li-1-5.jpg" alt="black bag" width="255" height="322">
+                            <img class="clothes" src="img/li-1-5.png" alt="black bag" width="255" height="322">
                             <div>
                                 <p class="name">Blue Tshirt</p>
                                 <p class="price">26</p>
@@ -90,15 +92,15 @@
                     <li>
                         <a href="#">
                             <img class="clothes" src="img/li-1-7.jpg" alt="shoes shit" width="255" height="322">
-                            <div>
+                            <div >
                                 <p class="name">YELLOW Tshirt</p>
                                 <p class="price">21</p>
                             </div>
                         </a>
                     </li>
                     <li>
-                        <a href="">
-                            <img class="clothes" src="img/li-1-8.jpg" alt="glasses" width="234" height="98">
+                        <a href="#">
+                            <img class="clothes" src="img/li-1-8.png" alt="glasses" width="255" height="322">
                             <div>
                                 <p class="name">Cool lingerie</p>
                                 <p class="price">56</p>
@@ -108,9 +110,9 @@
                 </ul>
             </section>
             <!--blog-->
-            <section class="section_2">
-                <h2 class="headline_2">LATEST NEWS</h2>
-                <ul>
+            <section class="blog">
+                <h2>LATEST NEWS</h2>
+                <ul class="blog_list clearfix">
                     <li>
                         <article>
                             <img class="blog_img" src="img/li-2-1.jpg" alt="tablet" width="350" height="262">
@@ -119,29 +121,29 @@
                             <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro perferendis
                                 perspiciatis, esse delectus corporis quo veritatis repellat temporibus natus laboriosam
                                 expedita fuga culpa. Odit facere commodi, adipisci animi itaque optio?</p>
-                            <button class="button">read more</button>
+                            <button class="button">Read More</button>
                         </article>
                     </li>
                     <li>
                         <article>
                             <img class="blog_img" src="img/li-2-2.jpg" alt="girls" width="350" height="262">
-                            <h3 class="img_headline">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam,
-                                vero!</h3>
-                            <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, autem
-                                pariatur maxime enim id sed incidunt rerum consequatur temporibus, non in, ea ipsam
-                                molestiae minima iure ab ipsa vel velit.</p>
-                            <button class="button">read more</button>
+                            <h3 class="img_headline">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                Obcaecati, deserunt</h3>
+                            <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro perferendis
+                                perspiciatis, esse delectus corporis quo veritatis repellat temporibus natus laboriosam
+                                expedita fuga culpa. Odit facere commodi, adipisci animi itaque optio?</p>
+                            <button class="button">Read More</button>
                         </article>
                     </li>
                     <li>
                         <article>
                             <img class="blog_img" src="img/li-2-3.jpg" alt="bus" width="350" height="262">
-                            <h3 class="img_headline">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam,
-                                dolor!</h3>
-                            <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum repudiandae
-                                fugit, expedita, voluptatum esse nostrum assumenda repellat quod in dolores debitis a,
-                                dicta deserunt quos nulla illo officia! Voluptatibus, at.</p>
-                            <button class="button">read more</button>
+                            <h3 class="img_headline">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                Obcaecati, deserunt</h3>
+                            <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro perferendis
+                                perspiciatis, esse delectus corporis quo veritatis repellat temporibus natus laboriosam
+                                expedita fuga culpa. Odit facere commodi, adipisci animi itaque optio?</p>
+                            <button class="button">Read More</button>
                         </article>
                     </li>
                 </ul>

@@ -1,0 +1,229 @@
+.clearfix::after {
+	content: "";
+	display: table;
+	clear:   both;
+}
+
+body {
+	font-family:    "Roboto";
+	padding-bottom: 40px;
+}
+
+h2::after {
+	margin:           20px auto 30px;
+	display:          block;
+	content:          '';
+	width:            164px;
+	height:           7px;
+	background-color: #19bb9b;
+}
+
+header {
+	margin:    40px auto 100px;
+	max-width: 1120px;
+}
+
+.logo {
+	margin-right:    40px;
+	float:           left;
+	text-decoration: none;
+	color:           #626262;
+	font-size:       30px;
+	line-height:     32px;
+	text-transform:  uppercase;
+}
+
+.logo::first-letter {
+	color: #1abc9c;
+}
+
+
+
+.menu li {
+	display: block;
+	float: right;
+	list-style: none;
+	text-align: right;
+}
+
+.menu li:not(:first-of-type) {
+	margin-right: 40px;
+}
+
+.menu li:hover > a {
+	color:  #1abc9c;
+	cursor: pointer;
+}
+
+.menu a {
+	text-decoration: none;
+	font-size:       14px;
+	line-height:     14px;
+	color:           rgb(0, 0, 0);
+	font-family:     "Open Sans";
+	font-weight:     bold;
+	text-transform:  uppercase;
+}
+
+
+.product_list,
+.blog_list {
+	padding: 0;
+}
+
+h2 {
+	margin:         0;
+	letter-spacing: -1px;
+	font-size:      48px;
+	line-height:    48px;
+	text-align:     center;
+	text-transform: uppercase;
+}
+
+/*PRODUCT LIST*/
+
+.product {
+	margin: auto;
+	width:  1112px;
+}
+
+.product h2 {
+	color: rgb(81, 81, 81);
+}
+
+.product_list li {
+	position:         relative;
+	float:            left;
+	list-style:       none;
+	width:            255px;
+	height:           322px;
+	background-color: #e9effd;
+}
+
+.product_list li:not(:nth-child(4n)) {
+	margin-right: 30px;
+}
+
+.product_list a {
+    text-decoration: none;
+    width:255px ;
+    height:40px ;
+    line-height: 0;
+    margin: 0;
+    
+}
+
+.product_list li:nth-child(-n + 4) {
+	margin-bottom: 30px;
+}
+
+.product_list li:nth-child(n + 5) {
+	margin-bottom: 100px;
+}
+.product_list div{
+    width:255px ;
+    height:40px ;
+    position: absolute;
+    bottom: 0;
+}
+.name {
+    display: block;
+    float: left;
+    margin: 0;
+    bottom: 0;
+	position:         absolute;
+	width:            200px;
+	height:           40px;
+	background-color: #323232;
+	font-size:        18px;
+	line-height:      40px;
+	color:            rgb(255, 255, 255);
+	text-transform:   uppercase;
+}
+
+.product_list li:hover p {
+	background-color: #1abc9c;
+}
+
+.price {
+    display: block;
+    float:           right;
+    position:         absolute;
+    margin: 0;
+    bottom: 0;
+	width:            30px;
+	height:           40px;
+	background-color: #8c8c8c;
+	font-size:        18px;
+	line-height:      40px;
+	color:            rgb(255, 255, 255);
+    text-align:       center;
+}
+
+
+
+.product_list li:hover span {
+	background-color: #7fd9c7;
+}
+
+/*blog list*/
+
+.blog {
+	margin: auto;
+	width:  1112px;
+}
+
+.blog h2 {
+	color: rgb(85, 82, 82);
+}
+
+.blog_list li {
+	list-style:  none;
+	float:       left;
+	width:       347px;
+	font-family: "Open Sans";
+}
+
+.blog_list h3 {
+	font-size:   18px;
+	line-height: 26px;
+	color:       rgb(85, 82, 82);
+	font-weight: bold;
+}
+
+.blog_list h3::after {
+	display:          block;
+	margin:           10px 0 30px;
+	content:          '';
+	width:            136px;
+	height:           3px;
+	background-color: #4dc5ab;
+}
+
+.blog_list p {
+	font-size:   14px;
+	line-height: 26px;
+	color:       rgb(85, 82, 82);
+}
+
+.blog_list li:not(:nth-child(3n)) {
+	margin-right: 30px;
+}
+
+.blog button {
+	border-color:     transparent;
+	width:            160px;
+	height:           51px;
+	border-radius:    3px;
+	box-shadow:       0 2px 5px rgba(0, 0, 0, 0.39);
+	background-color: #4dc5ab;
+	font-size:        16px;
+	line-height:      26px;
+	color:            rgb(255, 255, 255);
+	text-align:       center;
+    cursor:           pointer;
+}
+
+.blog button:hover {
+	opacity: 0.5;
+}
