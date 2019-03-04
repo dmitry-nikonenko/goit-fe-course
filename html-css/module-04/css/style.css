@@ -24,7 +24,7 @@ header {
 }
 
 .logo {
-	margin-right:    40px;
+    display: block;
 	float:           left;
 	text-decoration: none;
 	color:           #626262;
@@ -41,9 +41,8 @@ header {
 
 .menu li {
 	display: block;
-	float: right;
 	list-style: none;
-	text-align: right;
+	float: left;
 }
 
 .menu li:not(:first-of-type) {
@@ -56,6 +55,7 @@ header {
 }
 
 .menu a {
+	display: block;
 	text-decoration: none;
 	font-size:       14px;
 	line-height:     14px;
@@ -69,6 +69,7 @@ header {
 .product_list,
 .blog_list {
 	padding: 0;
+	margin: 0;
 }
 
 h2 {
@@ -82,10 +83,6 @@ h2 {
 
 /*PRODUCT LIST*/
 
-.product {
-	margin: auto;
-	width:  1112px;
-}
 
 .product h2 {
 	color: rgb(81, 81, 81);
@@ -113,9 +110,6 @@ h2 {
 	margin-bottom: 30px;
 }
 
-.product_list li:nth-child(n + 5) {
-	margin-bottom: 100px;
-}
 .product_list p {
 	margin:           0;
 	padding-left:     20px;
@@ -131,7 +125,7 @@ h2 {
 	text-transform:   uppercase;
 }
 
-.product_list li:hover p {
+.product_list a:hover p {
 	background-color: #1abc9c;
 }
 
@@ -169,7 +163,7 @@ span::before {
 .blog_list li {
 	list-style:  none;
 	float:       left;
-	width:       347px;
+	width:       345px;
 	font-family: "Open Sans";
 }
 
