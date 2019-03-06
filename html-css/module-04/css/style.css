@@ -13,6 +13,7 @@
   
   .header {
 	padding-top: 37px;
+	padding-bottom: 50px;
   }
   
   .logo {
@@ -66,20 +67,20 @@
 .product {
 	margin:0 auto;
 	width:  1110px;
+	padding-bottom: 50px;
 }
 
-.product .title_product {
-	color: rgb(81, 81, 81);
-}
 
 h2 {
 	margin:         0;
-	padding-top: 50px;
 	letter-spacing: -1px;
 	font-size:      48px;
 	line-height:    48px;
 	text-align:     center;
 	text-transform: uppercase;
+	font-family: "Roboto";
+	margin-bottom: 50px;
+	color: #515151;
 }
 
 h2::after {
@@ -94,8 +95,6 @@ h2::after {
 .ul_product{
 	padding: 0;
 	margin: 0;
-	margin-top: 50px;
-	margin-bottom: 30px;
 }
 .ul_product li {
 	position:         relative;
@@ -118,9 +117,7 @@ h2::after {
 	margin-bottom: 30px;
 }
 
-.a_product{
-	display: table;
-}
+
 .div_product{
 	margin:           0;
 	position:         absolute;
@@ -145,12 +142,14 @@ p {
 	width: 200px;
 	float: left;
 	text-align: center;
+	font-family: "Roboto";
 }
 .price{
 	width: 55px;
 	float: right;
 	background-color: rgb(81, 81, 81);
 	text-align: center;
+	font-family: "Roboto";
 }
 .price:before {
 	content: "\FF04";
@@ -171,8 +170,6 @@ p {
 .blog_list{
 	margin: 0;
 	padding: 0;
-	margin-top: 50px;
-	margin-bottom: 30px;
 }
 .blog_list li {
 	list-style:  none;
@@ -181,7 +178,13 @@ p {
 	font-family: "Open Sans";
 }
 
+.blog_img{
+	margin-bottom:10px;
+}
+
 .blog_list h3 {
+	margin: 0;
+	margin-bottom:30px;
 	font-size:   18px;
 	line-height: 26px;
 	color:       rgb(85, 82, 82);
@@ -190,7 +193,6 @@ p {
 
 .blog_list h3::after {
 	display:          block;
-	margin:           10px 0 30px;
 	content:          '';
 	width:            136px;
 	height:           3px;
