@@ -149,7 +149,7 @@ padding-bottom: 20px;
 	width: 78%;
 }
 
-span{position: absolute;
+.span_button{position: absolute;
     left: 36px;
 		top: -9px;}
 
@@ -253,3 +253,90 @@ span{position: absolute;
 			content: "\FF04";
 			}
 			
+
+
+			.box{
+				width: 235px;
+				height: 260px;
+				background-color: rgba(0,0,0, 0.8);
+				position: absolute;
+				opacity: .7;
+				left: 10px;
+				top:10px;
+				display: none;
+	
+				
+		}
+		.li_product:hover .box{
+			display: block;
+		}
+		.mini_box{
+				width: 158px;
+				height: 108px;
+				position: absolute;
+				left: 50%;
+			top: 50%;
+			transform: translate(-50%, -50%);
+		}
+		.box_mini{
+				padding: 0;
+		}
+		.box_mini:hover{
+				background-color: #1abc9c;
+		}
+		.box1{
+		background: transparent;
+		width: 50px;
+		height: 50px;
+		background-image:url(../image/arrow.png);
+		background-repeat: no-repeat;
+		background-position: center;
+		border: 1px solid #fff;
+		}
+		
+		
+		.box2{
+				background: transparent;
+				background-image:url(../image/clock.png);
+				width: 50px;
+				height: 50px;
+				background-repeat: no-repeat;
+				background-position: center;
+				border: 1px solid #fff;
+				
+				
+				
+		}
+		
+		.box3{
+				background: transparent;
+				background-image:url(../image/heart.png);
+				width: 50px;
+				height: 50px;
+				background-repeat: no-repeat;
+				background-position: center;
+				border: 1px solid #fff;
+				
+		}
+		
+		.box4{
+				background: transparent;
+				background-image:url(../image/market.png);
+				width: 158px;
+				height: 50px;
+				background-repeat: no-repeat;
+				background-position: 8px;
+				border: 1px solid #fff;
+				background-color: rgba(0,0,0, 0.8);
+				bottom: 0;
+				position: absolute;
+		}
+		
+		.span_bottom{
+		font-size: 12px;
+		color: #ffffff;
+		font-family: "Roboto";
+		text-transform: uppercase;
+		
+		}
+		
