@@ -83,11 +83,13 @@ text-transform: uppercase;
 	content:          '';
 	width:            100%;
 	height:           3px;
-    background-color: #f38181;
     position: absolute;
+    transition-property: 
+    background-color;
+    background-color: #f38181;
+
     }
-
-
+    
 
     .service {
         width:  1200px;
@@ -244,6 +246,7 @@ text-transform: uppercase;
     .team {
         display:         flex;
         justify-content: space-between;
+        padding-bottom: 30px;
     }
     
     .member_wrapper {
@@ -252,11 +255,19 @@ text-transform: uppercase;
     }
     
     .member:hover .member_wrapper {
+        transition-property: 
+        transform,
+        box-shadow;
+        transition-duration: 3s;
         transform:  translate(-10px, -10px);
         box-shadow: #95e1d3 10px 10px;
     }
     
     .member:hover .socials {
+        
+        transition-property: 
+          opacity;
+          transition-duration: 0.2s;
         opacity: 1;
     }
     
@@ -293,8 +304,12 @@ text-transform: uppercase;
     }
     
     .socials li:hover > a {
-        background: #95e1d3;
-    }
+        transition-property: 
+          background-color;
+        transition-duration: 2s;
+        background-color: #95e1d3;
+        
+        }
     
     .socials a::before {
         content:   '';
@@ -334,6 +349,8 @@ text-transform: uppercase;
         color:          rgb(51, 51, 51);
         text-align:     center;
         text-transform: uppercase;
+        margin: 0;
+        padding-top: 10px;
     }
     
     .member_position {
@@ -343,6 +360,9 @@ text-transform: uppercase;
         font-family: "Roboto";
         font-style:  italic;;
         text-align:  center;
+        margin: 0;
+        padding-top: 10px;
+        
     }
     
     /*FOOTER*/
@@ -395,43 +415,4 @@ text-transform: uppercase;
         text-transform: uppercase;
     }
     
-    /*BACK HOME*/
     
-    .back-button,
-    .task-button {
-        text-decoration:  none;
-        color:            #b0b8b9;
-        position:         fixed;
-        bottom:           50px;
-        right:            50px;
-        width:            60px;
-        height:           60px;
-        border-radius:    50%;
-        background-color: #555555;
-        box-shadow:       0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12), 0 3px 1px -2px rgba(0, 0, 0, .2);
-        text-align:       center;
-        line-height:      60px;
-        transition:       right 0.5s, bottom 0.7s;
-    }
-    
-    .task-button:hover {
-        background-color: #717171;
-        color:            #ffffff;
-    }
-    
-    .back-button {
-        z-index: 1;
-    }
-    
-    
-    .back-button:hover {
-        background-color: #717171;
-        color:            #ffffff;
-    }
-    
-    .back-button:hover + .task-button,
-    .task-button:hover {
-        transition: right 0.3s, bottom 0.3s;
-        right:      95px;
-        bottom:     30px;
-    }
