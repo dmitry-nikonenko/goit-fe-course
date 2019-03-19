@@ -13,11 +13,57 @@ input[type="radio"].visually-hidden {
     overflow: hidden;
 }
 
-@font-face{
+@font-face {
     font-family: "wisdom";
     src: url("../fonts/Wisdom\ Script\ AJ.otf");
     font-weight: normal;
-    font-style: normal;}
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Montserrat Regular'), local('Montserrat-Regular'),
+        url('../fonts/montserrat-v12-latin-regular.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/montserrat-v12-latin-regular.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Montserrat Bold'), local('Montserrat-Bold'),
+        url('../fonts/montserrat-v12-latin-700.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/montserrat-v12-latin-700.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+
+@font-face {
+    font-family: 'PT Serif';
+    font-style: italic;
+    font-weight: 400;
+    src: local('PT Serif Italic'), local('PTSerif-Italic'),
+        url('../fonts/pt-serif-v9-latin-italic.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/pt-serif-v9-latin-italic.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Roboto Slab Regular'), local('RobotoSlab-Regular'),
+        url('../fonts/roboto-slab-v7-latin-regular.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/roboto-slab-v7-latin-regular.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
 
 body {
     font-family: "Montserrat", sans-serif;
@@ -100,17 +146,21 @@ a {
 
 .service>p {
     margin: 0;
-    font-size: 24px;
-    color: rgb(51, 51, 51);
-    font-family: "Kaushan Script";
+    font-size: 16px;
+    color: #777777;
+    font-family: "PT Serif";
+    font-style: italic;
+    font-weight: 400;
     text-align: center;
-   
+
 }
 
 .service>h2 {
     margin: 0 auto;
-    font-size: 30px;
-    color: rgb(51, 51, 51);
+    font-size: 40px;
+    letter-spacing: -1px;
+    line-height: 75px;
+    color: #222222;
     text-align: center;
     text-transform: uppercase;
     padding-top: 100px;
@@ -122,10 +172,12 @@ a {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    width: 940px;
+    margin: 0 auto;
 }
 
 .ul_services li {
-    width: 300px;
+    width: 290px;
     padding-top: 50px;
     display: flex;
     flex-direction: column;
@@ -141,14 +193,14 @@ a {
     content: '';
     width: 74px;
     height: 74px;
- 
+
 }
 
 .ul_services li:nth-child(1)::before {
     background-image: url("../img/icon1.png");
     width: 74px;
     height: 74px;
-    
+
 }
 
 .ul_services li:nth-child(2)::before {
@@ -170,62 +222,117 @@ a {
 }
 
 .services_title {
-    font-size: 14px;
-    color: rgb(51, 51, 51);
+    font-size: 18px;
+    letter-spacing: 0px;
+    line-height: 75px;
+    color: #222222;
+    font-family: "Montserrat";
+    font-weight: 700;
+    text-align: center;
     text-transform: uppercase;
+    margin: 0;
 }
 
 .services_text {
-    font-size: 15px;
-    line-height: 24px;
-    color: rgb(153, 153, 153);
-    font-family: "Roboto";
+    font-size: 14px;
+    letter-spacing: 0px;
+    color: #777777;
+    font-family: "Roboto Slab";
+    font-weight: 400;
     text-align: center;
 }
+
 .contact>p {
     margin: 0;
-    font-size: 24px;
-    color: rgb(51, 51, 51);
-    font-family: "Kaushan Script";
+    font-size: 16px;
+color: #777777;
+font-family: "PT Serif";
+font-weight: 400;
+font-style: italic;
     text-align: center;
-   
+    margin: 0;
+    padding-bottom: 60px;
+
 }
 
 .contact>h2 {
     margin: 0 auto;
-    font-size: 30px;
+    font-size: 40px;
+    letter-spacing: -1px;
     color: #ffffff;
+    font-family: "Montserrat";
+    font-weight: 700;
     text-align: center;
     text-transform: uppercase;
     padding-top: 100px;
 }
+
 .contact {
-	width: 100%;
-	height: 676px;
+    width: 100%;
+	height: 600px;
 	background-size: cover;
+	position: relative;
 	background-repeat: no-repeat;
 	background-position: center;
-    background-image: url(../img/background.png);
-}
-form{
- 
-
+	background-image: url(../img/background.png)
 }
 
-.ul_contact{
+.form {
     display: flex;
-    flex-direction: column;
-    width: 500px;
+    justify-content: space-between;
     flex-wrap: wrap;
-    height: 300px;
+    width: 940px;
+    height: 210px;
     margin: 0 auto;
-    align-items: center;
 }
-.li_contact{
-    flex-direction: column;
-    width: 100px;
-    height: 100px;
-    justify-content: center;
-    align-items: center;
+
+.form_contact {
     display: flex;
+    flex-direction: column;
+}
+
+.form_contact,
+.form textarea {
+    box-sizing: border-box;
+    width: 455px;
+    font-weight: bold;
+}
+
+.form *::placeholder {
+    text-transform: uppercase;
+}
+
+.li_contact input {
+    height: 50px;
+    width: 455px;
+    margin-bottom: 22px;
+}
+
+.form textarea {
+    height: 210px;
+    padding-top: 20px;
+    resize: none;
+}
+
+.form button {
+    width: 240px;
+    height: 65px;
+    margin: 0 auto;
+    border-style: none;
+    border-radius: 3px;
+    background-color: #fdd135;
+    font-size: 18px;
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.form *:required:valid {
+    outline: 2px solid #008000;
+}
+
+.form *:required:invalid {
+    outline: 1px solid #ff0000;
 }
