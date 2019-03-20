@@ -72,7 +72,7 @@ a {
     justify-content: space-around;
     z-index: 1;
     flex-direction: column-reverse;
-    width: 320px;
+    
 }
 
 .ul_header {
@@ -100,7 +100,6 @@ a {
     font-family: "Montserrat";
     font-weight: 700;
     padding-top: 100px;
-    width: 320px;
     text-align: center;
 }
 
@@ -165,6 +164,7 @@ a {
     display: flex;
     text-align: center;
     flex-direction: column;
+    margin-bottom: 58px;
 }
 .partner_h2{
     font-size: 22px;
@@ -193,6 +193,7 @@ font-size: 22px;
 color: #333333;
 font-family: "Montserrat";
 font-weight: 700;
+padding-bottom: 20px;
 }
 .partner_p{
     font-size: 14px;
@@ -200,36 +201,99 @@ color: #666666;
 font-family: "Roboto";
 font-weight: 300;
 text-align: center;
+padding-bottom: 20px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.partner_img {
+.box{
+    position: relative;
+    width: 121px;
+    height: 121px;
+    margin: 0 auto;
+    margin-bottom: 21px;
+    
+}
+.box img {
     border-radius: 50%;
     overflow: hidden;
 }
+
+.box::before{
+    position: absolute;
+    display: block;
+    content: ' ';
+    top: 70%;
+    left: 70%;
+    width: 37px;
+    height: 37px;
+    border: 4px solid #fff;
+    border-radius: 50%;
+}
+
+.icon_1::before{
+    background-image: url(../img/partner_1_icon.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #ff4e50;
+}
+
+.icon_2::before{
+    background-image: url(../img/partner_2_icon.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #ffa507;
+}
+
+.icon_3::before{
+    background-image: url(../img/partner_3_icon.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #1cd7ad;
+}
+
+.icon_4::before{
+    background-image: url(../img/partner_4_icon.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #4e73db;
+}
+.partner_button{
+    width: 280px;
+    margin: 0 auto;
+    border-radius: 20px;
+    background-color: #ffffff;
+    height: 40px;
+    border:2px solid #ff4e50;
+    cursor: pointer;
+    font-size: 14px;
+    color: #ff4e50;
+    font-family: "Montserrat";
+    font-weight: 700;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
