@@ -31,6 +31,11 @@ a {
     margin-bottom: 60px;
     background-size: cover;
 }
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .wrapper_slider {
+        background-image: linear-gradient(45deg, rgba(252, 227, 138, 0.72) 0%, rgba(243,129,129,1) 90%), url(../img/lev-min.jpg)
+    }
+  }
 
 .header {
     display: flex;
@@ -95,7 +100,12 @@ a {
     z-index: 1;
 
 }
-
+.li_header:hover svg{
+    fill: #f9bd86;
+}
+.li_header:hover .a_header{
+    color: #f9bd86;
+}
 .h1 {
     text-align: center;
     font-size: 72px;
@@ -203,6 +213,7 @@ a {
     font-size: 14px;
     color: rgb(51, 51, 51);
     text-transform: uppercase;
+    padding-bottom: 10px;
 }
 
 .services_text {
