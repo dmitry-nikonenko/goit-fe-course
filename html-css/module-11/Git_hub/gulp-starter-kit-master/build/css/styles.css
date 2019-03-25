@@ -412,10 +412,6 @@ template {
   box-sizing: border-box;
 }
 
-body {
-  font-family: "Montserrat", sans-serif;
-}
-
 ul {
   list-style: none;
   margin: 0;
@@ -492,15 +488,7 @@ a {
   position: relative;
 }
 
-.logo {
-  font-size: 30px;
-  color: #fff;
-  font-family: "Montserrat";
-  font-weight: 700;
-  text-decoration: none;
-}
-
-.header__a {
+.header_a {
   text-decoration: none;
   font-size: 14px;
   color: #fff;
@@ -509,7 +497,15 @@ a {
   text-transform: uppercase;
 }
 
-.header__a:hover::after {
+.logo {
+  font-size: 30px;
+  color: #fff;
+  font-family: "Montserrat";
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.header_a:hover::after {
   margin: auto;
   margin-top: 10px;
   display: block;
@@ -526,7 +522,7 @@ a {
   fill: #f9bd86;
 }
 
-.header_li:hover .header__a {
+.header_li:hover .header_a {
   color: #f9bd86;
 }
 
@@ -629,7 +625,7 @@ a {
   margin: 0 auto;
 }
 
-.blog > p {
+.blog__p {
   margin: 0;
   font-size: 24px;
   color: #333333;
@@ -637,7 +633,7 @@ a {
   text-align: center;
 }
 
-.blog > h2 {
+.blog__h2 {
   margin: 0 auto 60px;
   font-size: 30px;
   color: #333333;
