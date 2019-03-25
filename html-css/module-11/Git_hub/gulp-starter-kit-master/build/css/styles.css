@@ -518,7 +518,7 @@ a {
   height: 3px;
   position: absolute;
   transition-property: background-color;
-  background-color: #fce38a;
+  background-color: #f9bd86;
   z-index: 1;
 }
 
@@ -593,11 +593,11 @@ a {
 
 .service_li {
   display: flex;
+  justify-content: space-between;
   flex-direction: row;
   width: 330px;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
 }
 
 .service_ul li:not(:nth-last-child(-n + 3)) {
@@ -712,7 +712,7 @@ p.p_blog {
   box-sizing: border-box;
   width: 56px;
   height: 56px;
-  background: #fce38a;
+  background: #f9bd86;
 }
 
 .socials li:nth-child(-n + 3) > a {

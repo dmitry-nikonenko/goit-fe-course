@@ -1,5 +1,9 @@
 @import './base/fonts.scss';
 @import './normalize.scss';
+@import './utils/mixin.scss';
+
+$main-color: #f9bd86;
+
 
 * {
   margin: 0;
@@ -55,11 +59,9 @@ a {
     margin-bottom: 120px;
     text-transform: uppercase;
   }
-  
+
   &__header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    @include row;
     height: 100px;
     align-items: center;
     max-width: 1200px;
@@ -122,17 +124,17 @@ a {
   height: 3px;
   position: absolute;
   transition-property: background-color;
-  background-color: #fce38a;
+  background-color: $main-color;
   z-index: 1;
 
 }
 
 .header_li:hover svg {
-  fill: #f9bd86;
+  fill: $main-color;
 }
 
 .header_li:hover .header__a {
-  color: #f9bd86;
+  color: $main-color;
 }
 
 
@@ -192,19 +194,17 @@ a {
 }
 
 .service_ul {
-  display: flex;
-  justify-content: space-between;
+  @include space-between;
   flex-wrap: wrap;
   margin-bottom: 70px;
 }
 
 .service_li {
-  display: flex;
+  @include space-between;
   flex-direction: row;
   width: 330px;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
 }
 
 .service_ul li:not(:nth-last-child(-n + 3)) {
@@ -272,8 +272,7 @@ p.p_blog {
 }
 
 .team {
-  display: flex;
-  justify-content: space-between;
+  @include space-between;
   padding-bottom: 30px;
 }
 
@@ -317,11 +316,11 @@ p.p_blog {
   box-sizing: border-box;
   width: 56px;
   height: 56px;
-  background: #fce38a;
+  background: $main-color;
 }
 
 .socials li:nth-child(-n + 3)>a {
-  border-right: 1px solid #f9bd86;
+  border-right: 1px solid $main-color;
 }
 
 .socials li:hover:nth-child(-n + 3)>a {
@@ -346,34 +345,25 @@ p.p_blog {
 
 .socials li:nth-child(1)>a::before {
   background: url("../images/facebook.svg") no-repeat center;
-  width: 50px;
-  height: 50px;
-  background-size: 50px;
-  border-radius: 50%;
+  @include social;
 }
 
 .socials li:nth-child(2)>a::before {
   background: url("../images/twitter.svg") no-repeat center;
-  width: 50px;
-  height: 50px;
-  background-size: 50px;
-  border-radius: 50%;
+  @include social;
+
 }
 
 .socials li:nth-child(3)>a::before {
   background: url("../images/pinterest.svg") no-repeat center;
-  width: 50px;
-  height: 50px;
-  background-size: 50px;
-  border-radius: 50%;
+  @include social;
+
 }
 
 .socials li:nth-child(4)>a::before {
   background: url("../images/instagram.svg") no-repeat center;
-  width: 50px;
-  height: 50px;
-  background-size: 50px;
-  border-radius: 50%;
+  @include social;
+
 }
 
 .member_name {
